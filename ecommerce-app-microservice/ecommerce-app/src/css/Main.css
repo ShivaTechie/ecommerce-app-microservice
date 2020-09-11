@@ -1,0 +1,13 @@
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  /* background-attachment: fixed; */
+  background-size: contain;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, rgb(71, 128, 161), rgb(10, 10, 10));
+}

@@ -1,0 +1,44 @@
+ <div className="prouduct-list">
+      <Row
+        marginHeight="20"
+        marginWidth="20px"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "60%",
+        }}
+      >
+        {productsData.map((productObj) => (
+          <ul key={productObj.id}>
+            {
+              <Card
+                style={{
+                  width: "20em",
+                  height: "35em",
+                  marginTop: "50px",
+                  padding: "10px",
+                }}
+              >
+                {/* <Route exact path={`/product/${productObj.id}`}>
+                    <ProductPage obj={productObj} />
+                  </Route> */}
+                <CardHeader>
+                  <CardDeck style={{ margin: "auto" }}>
+                    {productObj.name}{" "}
+                  </CardDeck>
+                </CardHeader>
+                <CardBody>
+                  {/* <Link onClick={setPageId} to={`/product/${productObj.id}`}></Link> */}
+                  <CardImg height="100%" width="100%" src={productObj.image} />
+                </CardBody>
+                <CardText>{productObj.description}</CardText>
+                <CardFooter>
+                  <CardText>₹{productObj.price}</CardText>
+                  <Quantity value={value} productData={productObj} />
+                </CardFooter>
+              </Card>
+            }
+          </ul>
+        ))}
+      </Row>
+    </div>

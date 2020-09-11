@@ -1,0 +1,14 @@
+.product-list {
+  display: flex;
+  justify-content: start;
+
+  box-sizing: border-box;
+  margin: 25px;
+  width: 100%;
+}
+
+.product {
+  margin: 30px;
+  width: 15em;
+  height: 25em;
+}

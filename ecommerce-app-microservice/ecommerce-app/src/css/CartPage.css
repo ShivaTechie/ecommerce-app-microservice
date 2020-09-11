@@ -1,0 +1,12 @@
+.jumbo {
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(231, 244, 255);
+}
+.cart__items {
+  box-sizing: border-box;
+}

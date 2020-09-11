@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: product-catalog-microservice
+  profiles:
+    active: local
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      fail-fast: false
+      
+  #datasource:
+  #    url: jdbc:h2:mem:productkartdb
+  #    driverClassName: org.h2.Driver
+  #    username: sa
+  #    password: 
+  #jpa:
+  #    database-platform: org.hibernate.dialect.H2Dialect
+  #    show-sql: true
+  #    hibernate:
+  #       ddl-auto: create-drop
+# #Enabling H2 Console
+  #h2:
+  #  console:
+  #    enabled: true
+  #    path: /h2
+
+  
